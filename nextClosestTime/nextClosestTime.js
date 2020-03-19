@@ -17,5 +17,5 @@ Output: "22:22"
 */
 
 function nextClosestTime(time) {
-  // TODO: solve problem
+  // write your code here
 };
