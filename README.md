@@ -13,7 +13,7 @@ Feel free to clone this repo down to your local computer. Just like the gHR toy 
 I aim to pull coding problems from the following sources:
 
 - [LeetCode](https://leetcode.com/) (Medium/Hard problems)
-- [Leetfree.com](https://leetfree.com) (Provides premium LeetCode problems)
+- [LeetFree.com](https://leetfree.com) (Provides premium LeetCode problems)
 - [AlgoExpert](https://www.algoexpert.io/questions) (Perhaps Matthew could suggest some interesting ones)
 - [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
