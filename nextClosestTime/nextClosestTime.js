@@ -16,6 +16,6 @@ Output: "22:22"
 
 */
 
- function nextClosestTime(time) {
+function nextClosestTime(time) {
   // TODO: solve problem
- };
+};
