@@ -1,9 +1,7 @@
 # Welcome to the Accountabilibuddies code problems library!
 
-  
 
 This repo will be updated each Monday and Thursday with new coding problems for members of the gHR Accountabilibuddies.
-
   
 
 ## How to use this repository
@@ -17,18 +15,16 @@ This repo will be updated each Monday and Thursday with new coding problems for 
 	 
  3. Solve the current problem ***while in your personal branch.***
  4. Push your completed code ***to your personal branch*** on the repo.
- 
+
 	 i.e. `git push origin <yourname>`
 	 
  5. Pull down new code problems on Mondays and Thursdays ***while in your personal branch.***
  6. Repeat steps 3 through 5!
 
 ## Code problem sources
-
   
 
 Coding problems will be borrowed from the following sources:
-
   
 
 -  [LeetCode](https://leetcode.com/) (selecting from Medium/Hard problems)
