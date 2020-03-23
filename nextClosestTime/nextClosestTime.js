@@ -17,22 +17,46 @@ Output: "22:22"
 */
 
 function nextClosestTime(time) {
-  let originalNumberArray = time.replace(':','').split('').map((char) => parseInt(char));
-  let possibleNumberArray = [...originalNumberArray].sort();
-  let result = originalNumberArray;
-  let maxNumbersForTime = [2, 3, 5, 9];
+  const originalNumberArray = time.replace(':','').split('').map((char) => parseInt(char));
+  // const possibleNumberArray = [...originalNumberArray].sort();
+  const maxNumbersForTime = [2, 9, 5, 9];
+  let result = [...originalNumberArray];
+  let timeComplexityCount = 0; // time complexity logging
 
-  // start adding digits to the result
+  while (true) {
+    timeComplexityCount++; // time complexity logging
 
-  // role over each digit if it exceeds it's max digit (per maxNumbersForTime)
+    result[3]++;   // start adding to the minute digit
+
+    // roll-over each higher digit if current digit it exceeds it's max (per maxNumbersForTime)
+    if (result[3] > maxNumbersForTime[3]) {
+      result[3] = 0;
+      result[2]++;
+    }
+
+    if (result[2] > maxNumbersForTime[2]) {
+      result[2] = 0;
+      result[1]++;
+    }
+
+    if (result[1] > maxNumbersForTime[1]) {
+      result[1] = 0;
+      result[0]++;
+    }
+
+    if ((parseInt(`${result[0]}${result[1]}`)) > 23) { // special check for hours > 23
+      result = [0, 0, 0, 0]; // reset digits if hours > 23
+    }
 
 
     // check if result includes only original digits
     if (result.every((num) => originalNumberArray.includes(num))) {
+      console.log(timeComplexityCount); // time complexity logging
       
       // return formatted string if true
       return `${result[0]}${result[1]}:${result[2]}${result[3]}`;
     }
+  }
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -40,4 +64,7 @@ function nextClosestTime(time) {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 console.log(nextClosestTime('19:34')); // -> '19:39'
-// console.log(nextClosestTime('23:59')); // -> '22:22'
+console.log(nextClosestTime('14:39')); // -> '14:41'
+console.log(nextClosestTime('23:59')); // -> '22:22' [Complexity count: 1343]
+console.log(nextClosestTime('00:50')); // -> '00:55'
+console.log(nextClosestTime('23:50')); // -> '23:52'
