@@ -17,5 +17,27 @@ Output: "22:22"
 */
 
 function nextClosestTime(time) {
-  // write your code here
+  let originalNumberArray = time.replace(':','').split('').map((char) => parseInt(char));
+  let possibleNumberArray = [...originalNumberArray].sort();
+  let result = originalNumberArray;
+  let maxNumbersForTime = [2, 3, 5, 9];
+
+  // start adding digits to the result
+
+  // role over each digit if it exceeds it's max digit (per maxNumbersForTime)
+
+
+    // check if result includes only original digits
+    if (result.every((num) => originalNumberArray.includes(num))) {
+      
+      // return formatted string if true
+      return `${result[0]}${result[1]}:${result[2]}${result[3]}`;
+    }
 };
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// TEST SUITE ////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+console.log(nextClosestTime('19:34')); // -> '19:39'
+// console.log(nextClosestTime('23:59')); // -> '22:22'
