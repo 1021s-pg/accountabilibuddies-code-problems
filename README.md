@@ -31,15 +31,17 @@ Coding problems will be borrowed from the following sources:
 
   
 
--  [LeetCode](https://leetcode.com/) (Medium/Hard problems)
+-  [LeetCode](https://leetcode.com/) (selecting from Medium/Hard problems)
 
--  [LeetFree.com](https://leetfree.com) (Provides premium LeetCode problems)
+-  [LeetFree.com](https://leetfree.com) (Provides the premium LeetCode problems for free)
 
 -  [AlgoExpert](https://www.algoexpert.io/questions) (Perhaps Matthew could suggest some interesting ones)
+
+- [Rosetta Code](https://rosettacode.org/wiki/Rosetta_Code) (Thanks [sayertindall](https://github.com/sayertindall)!)
 
 -  [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
 
   
   
 
-Please feel free to add (via PR) any additional websites/books/etc. you would like to see coding problems from!
+Please feel free to add (via PR) any additional websites/books/etc. you would like to see coding problems from! You can also add any coding problem resources you find in the Accountabilibuddies #code-problems Slack channel, and I'll try to keep this list updated.
