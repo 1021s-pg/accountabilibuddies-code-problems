@@ -39,7 +39,7 @@ Coding problems will be borrowed from the following sources:
 
 - [Rosetta Code](https://rosettacode.org/wiki/Rosetta_Code) (Thanks [sayertindall](https://github.com/sayertindall)!)
 
--  [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+-  [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850) (Ask in Slack if you need a copy)
 
   
   
