@@ -33,7 +33,7 @@ Coding problems will be borrowed from the following sources:
 
 -  [AlgoExpert](https://www.algoexpert.io/questions) (Perhaps Matthew could suggest some interesting ones)
 
-- [Rosetta Code](https://rosettacode.org/wiki/Rosetta_Code) (Thanks [sayertindall](https://github.com/sayertindall)!)
+-  [Rosetta Code](https://rosettacode.org/wiki/Rosetta_Code) (Thanks [sayertindall](https://github.com/sayertindall)!)
 
 -  [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850) (Ask in Slack if you need a copy)
 
