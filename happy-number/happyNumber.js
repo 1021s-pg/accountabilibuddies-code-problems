@@ -1,6 +1,7 @@
 /**
-Any number will be called a happy number if,
-after repeatedly replacing it with a number equal to the sum of the square of all of its digits, leads us to number ‘1’.
+Any number will be called a happy number if, after repeatedly replacing it 
+with a number equal to the sum of the square of all of its digits, leads 
+us to number ‘1’.
 All other (not-happy) numbers will never reach ‘1’.
 Instead, they will be stuck in a cycle of numbers which does not include ‘1’.
 
@@ -41,10 +42,34 @@ this means that we can never reach ‘1’, therefore, ‘12’ is not a happy n
 
 
 const find_happy_number = function (num) {
-  // TODO: Write your code here
-  return false;
+  let previousNumbers = [];
+  let result = false;
+
+  (function checkNumber(number) {
+    // base case
+    if (number === 1) {
+      result = true;
+      return;
+    }
+    
+    // else continue searching
+    let digits = [... (number).toString()];
+    let newNumber = digits.reduce((acc, curr) => {
+      return acc + (curr ** 2);
+    }, 0);
+    
+    // check if new number already seen, and return if it has
+    if (previousNumbers.includes(newNumber)) return;
+    
+    // continue searching if new number hasn't alreasy been seen
+    previousNumbers.push(newNumber);
+    checkNumber(newNumber);
+  })(num);
+
+  return result;
 };
 
 
-console.log(`${find_happy_number(23)}`)
-console.log(`${find_happy_number(12)}`)
+console.log(`23 is${find_happy_number(23) ? '' : 'n\'t'} a happy number!`) // --> true
+console.log(`12 is${find_happy_number(12) ? '' : 'n\'t'} a happy number!`) // --> false
+console.log(`19 is${find_happy_number(19) ? '' : 'n\'t'} a happy number!`) // --> true
